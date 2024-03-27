@@ -1,0 +1,11 @@
+namespace authapi.dto
+{
+    public class register
+    {
+       public string UserId{get;set;} = string.Empty; 
+       public int GameId{get;set;}
+       public int raiting{get;set;}
+   }
+}
+
+

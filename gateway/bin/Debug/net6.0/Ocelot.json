@@ -1,0 +1,140 @@
+{
+  "GlobalConfiguration": {},
+  "Routes": [{
+        "UpstreamPathTemplate": "/gateway/Users/Game/{id}",
+        "UpstreamHttpMethod": ["Get"],
+        "DownstreamPathTemplate": "/api/Authenticate/Games/{id}",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port": 7056
+        }],
+
+        "AuthenticationOptions": {
+        "AuthenticationProviderKey": "Bearer",
+        "AllowedScopes": []
+        }
+
+    },
+    {
+        "UpstreamPathTemplate": "/gateway/Users/Rate/{id}",
+        "UpstreamHttpMethod": ["Get"],
+        "DownstreamPathTemplate": "/api/Authenticate/Rate/123",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port":7056
+        }],
+
+        "AuthenticationOptions": {
+            "AuthenticationProviderKey": "Bearer",
+            "AllowedScopes": []
+        }
+    },
+    {
+        "UpstreamPathTemplate": "/gateway/Users/Search",
+        "UpstreamHttpMethod": ["Get"],
+        "DownstreamPathTemplate": "/api/Authenticate/Search",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port": 7056
+        }]
+    },
+    {
+        "UpstreamPathTemplate": "/gateway/Authenticate/login",
+        "UpstreamHttpMethod": ["Post"],
+        "DownstreamPathTemplate": "/api/Authenticate/login",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port": 7056
+        }]
+    },
+
+    {
+        "UpstreamPathTemplate": "/gateway/Authenticate/register",
+        "UpstreamHttpMethod": ["Post"],
+        "DownstreamPathTemplate": "/api/Authenticate/register",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port": 7056
+        }]
+    },
+
+    {
+        "UpstreamPathTemplate": "/gateway/Authenticate/register-admin",
+        "UpstreamHttpMethod": ["Post"],
+        "DownstreamPathTemplate": "/api/Authenticate/register-admin",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port": 7056
+        }]
+    },
+    {
+        "UpstreamPathTemplate": "/gateway/Authenticate/refresh-token",
+        "UpstreamHttpMethod": ["Post"],
+        "DownstreamPathTemplate": "/api/Authenticate/refresh-token",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port": 7056
+        }]
+    },
+
+    {
+        "UpstreamPathTemplate": "/gateway/Authenticate/revoke/{username}",
+        "UpstreamHttpMethod": ["Post"],
+        "DownstreamPathTemplate": "/api/Authenticate/revoke/{username}",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port": 7056
+        }]
+    },
+    {
+        "UpstreamPathTemplate": "/gateway/Authenticate/revoke-all",
+        "UpstreamHttpMethod": ["Post"],
+        "DownstreamPathTemplate": "/api/Authenticate/revoke-all",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port": 7056
+        }]
+    },
+
+    {
+        "UpstreamPathTemplate": "/gateway/game",
+        "UpstreamHttpMethod": ["Get"],
+        "DownstreamPathTemplate": "/api/game",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port": 7062
+        }]
+    },
+
+    {
+        "UpstreamPathTemplate": "/gateway/game/User/{UserId}",
+        "UpstreamHttpMethod": ["Post"],
+        "DownstreamPathTemplate": "/api/game/User/{UserId}",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port": 7056
+        }]
+    },
+    {
+        "UpstreamPathTemplate": "/gateway/game/{GameId}",
+        "UpstreamHttpMethod": ["Post"],
+        "DownstreamPathTemplate": "/api/game/{GameId}",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [{
+            "Host": "localhost",
+            "Port": 7056
+        }]
+    }
+  ]  
+}

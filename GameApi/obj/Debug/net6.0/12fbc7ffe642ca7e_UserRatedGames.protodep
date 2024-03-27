@@ -1,0 +1,2 @@
+obj\Debug\net6.0\protos/UserRatedGames.cs \
+obj\Debug\net6.0\protos/UserRatedGamesGrpc.cs: protos/UserRatedGames.proto
